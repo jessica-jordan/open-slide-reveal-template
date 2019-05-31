@@ -1,7 +1,7 @@
 <div class="reveal">
 	<div class="slides">
     {{#each @slides as |slide|}}
-      <section data-markdown>
+      <section data-markdown {{if slide.image "data-background-image={{slide.image}}"}}>
         <textarea data-template>
 {{slide.content}}
 
